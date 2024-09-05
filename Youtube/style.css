@@ -27,10 +27,12 @@ body{
 .logo-sec .menu-logo{
     width: 30px;
     height: 20px;
+    cursor: pointer;
 }
 .logo-sec .yt-logo{
     width: 40px;
     height: 20px;
+    cursor: pointer;
 }
 .gen{
     display: flex;
@@ -39,6 +41,7 @@ body{
 }
 .gen p{
     height: 20px;
+    cursor: pointer;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -53,8 +56,9 @@ body{
 .search-sec{
     display: flex;
     align-items: center;
+    align-items: center;
 }
-.search-sec .input-sec{
+/* .search-sec .input-sec{
     width: 450px;
     height: 40px;
     background-color: #121212;
@@ -71,21 +75,55 @@ body{
    border-radius: 0 20px 20px 0;
    background-color: #212020;
    cursor:pointer;
-}
-.search-sec .mic-logo{
-    margin-left: 20px;
+} */
+ .ser{
+    display: flex;
+    width: 570px;
     height: 40px;
-    border-radius: 40px;
+    gap: 0;
+    border-radius: 20px;
+    background-color: #333;
+    border: 0.5px solid rgba(68, 66, 66, 0.791);
+ }
+ .ser .input-sec{
+    border: none;
+    border-radius: 20px 0 0 20px;
+    background-color: #131212dd;
+    width: 500px;
+    height: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+ }
+ .ser .search-logo{
+    margin-top: 5px;
+    margin-left: 15px;
+    width: 30px;
+    height: 25px;
+    cursor:pointer;
+
+ }
+.search-sec .mic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    width: 40px;
+    border-radius: 50px;
+    height: 40px;
     background-color: #333;
     cursor:pointer;
 } 
+.search-sec .mic .mic-logo{
+    align-items: center;
+    height: 25px;
+}
 .sing-up{
     display: flex;
     align-items: center;
     margin-right: 10px;
     gap: 10px;
 }
-.sing-up .video-logo{
+.sing-up .sing-up{
     width: 30px;
     cursor: pointer;
 }
@@ -107,6 +145,10 @@ body{
 .aside-sec li{
     list-style: none;
     padding: 1rem;
+}
+.section .aside-sec .line {
+    background-color: #333;
+    color: #333;
 }
 .aside-sec li:hover{
     background-color: #333;
@@ -174,7 +216,7 @@ body{
 } */
 .boton{
     display: flex;
-    gap: 1rem;
+    justify-content: space-between;
     margin-top: 1px;
 }
 .boton .channel-logo img{
