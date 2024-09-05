@@ -154,6 +154,10 @@ body{
     width: 32%;
     height: 50%;
     border-radius: 10px;
+    
+}
+.box1:hover{
+    cursor: pointer;
 }
 .video{
     width: 100%;
@@ -164,9 +168,10 @@ body{
     height: 100%;
     border-radius: 15px;
 }
-.video iframe :hover{
-    content:unset;
-}
+/* .box box1:hover{
+    cursor: pointer;
+    background-color: #333;
+} */
 .boton{
     display: flex;
     gap: 1rem;
