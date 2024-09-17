@@ -10,219 +10,424 @@ body{
 }
 .main-container{
   padding: 10px;
-  max-width: 1920px;
+  width: 100%;
   margin: 0 auto;
 }
 .main-header{
+    background-color: #0f0f0f;
+    height: 2.8rem;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.logo-sec{
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    margin-left: 20px;
-}
-.logo-sec .menu-logo{
-    width: 30px;
-    height: 20px;
-    cursor: pointer;
-}
-.logo-sec .yt-logo{
-    width: 40px;
-    height: 20px;
-    cursor: pointer;
-}
-.gen{
-    display: flex;
-    justify-content: center;
-    align-items: top;
-}
-.gen p{
-    height: 20px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-.gen p sub{
-    margin-top: -10px;
-}
- .logo-sec .yt-txt{
-    align-items: start;
-    font-size: 1.4rem;
-}
-.search-sec{
-    display: flex;
-    align-items: center;
-    align-items: center;
-}
-/* .search-sec .input-sec{
-    width: 450px;
-    height: 40px;
-    background-color: #121212;
-    border-radius: 20px 0 0 20px;
-    border:none;
-    padding: 20px;
-    font-size: 1rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+        .logo-sec{
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-left: 20px;
+
+                .menu-logo{
+                    width: 30px;
+                    height: 20px;
+                    cursor: pointer;
+                }
+                .yt-logo{
+                    width: 40px;
+                    height: 20px;
+                    cursor: pointer;
+                }
+
+                .gen{
+                    display: flex;
+                    justify-content: center;
+                    align-items: top;
+
+                    p{
+                        height: 20px;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                    }
+                }
+        }
+
+    .search-sec{
+        display: flex;
+        align-items: center;
+        align-items: center;
+
+        .ser{
+            display: flex;
+            width: 550px;
+            height: 33px;
+            gap: 0;
+            border-radius: 20px;
+            background-color: #333;
+            border: 0.5px solid rgba(68, 66, 66, 0.791);
+
+            .input-sec{
+                border: none;
+                border-radius: 20px 0 0 20px;
+                background-color: #131212dd;
+                width: 500px;
+                height: 100%;
+                padding: 10px;
+                font-size: 1rem;
+             }
+            .search-logo{
+                margin-top: 5px;
+                margin-left: 15px;
+                width: 20px;
+                height: 20px;
+                cursor:pointer;
+            
+             }
+         }
+        .mic{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 30px;
+            width: 35px;
+            border-radius: 50px;
+            height: 35px;
+            background-color: #333;
+            cursor:pointer;
+
+            .mic-logo{
+                align-items: center;
+                height: 25px;
+            }
+        } 
+    }
+    .sing-up{
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        gap: 10px;
+
+        .create{
+            border-radius: 20px;
+            display: flex;
+            height: 2rem;
+            gap: 5px;
+            justify-content: center;
+            background-color: #333;
+            align-items: center;
+            width: 90px;
+        }
+        .notfi-logo{
+            width: 30px;
+            cursor: pointer;
+        }
+        .login-logo{
+            width: 30px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+    }
 }
 
-.search-sec .search-logo {
-    width: 70px;
-   height: 40px;
-   align-items: center;
-   border-radius: 0 20px 20px 0;
-   background-color: #212020;
-   cursor:pointer;
-} */
- .ser{
-    display: flex;
-    width: 570px;
-    height: 40px;
-    gap: 0;
-    border-radius: 20px;
-    background-color: #333;
-    border: 0.5px solid rgba(68, 66, 66, 0.791);
- }
- .ser .input-sec{
-    border: none;
-    border-radius: 20px 0 0 20px;
-    background-color: #131212dd;
-    width: 500px;
-    height: 100%;
-    padding: 10px;
-    font-size: 1.2rem;
- }
- .ser .search-logo{
-    margin-top: 5px;
-    margin-left: 15px;
-    width: 30px;
-    height: 25px;
-    cursor:pointer;
 
- }
-.search-sec .mic{
+.main{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 30px;
-    width: 40px;
-    border-radius: 50px;
-    height: 40px;
-    background-color: #333;
-    cursor:pointer;
-} 
-.search-sec .mic .mic-logo{
-    align-items: center;
-    height: 25px;
+    justify-content: space-between;
+    gap: 20px;
 }
-.sing-up{
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
-    gap: 10px;
-}
-.sing-up .sing-up{
-    width: 30px;
-    cursor: pointer;
-}
-.sing-up .notfi-logo{
-    width: 30px;
-    cursor: pointer;
-}
-.sing-up .login-logo{
-    width: 30px;
-    cursor: pointer;
-}
+
 .aside-sec{
+    max-width: 250px;
+    position: fixed;
+    left: 0;
+    top: 40px;
     display: flex;
     flex-direction: column;
-    margin: 20px;
-    width: 600px;
-    gap:10px;
+    margin: 10px;
+    gap:1px;
+    height: calc(100vh - 10px);
+    overflow: hidden;
+    overflow-y: scroll;
+
+    li{
+        width: 100%;
+        height: 2.5rem;
+        list-style: none;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    
+    
+        img{
+            width: 25px;
+        }
+        .you{
+            width: 15px;
+            gap: 0;
+        }
+        .img-round{
+            border-radius: 20px
+        }
+    }
+
+    .line {
+        margin: 10px 0;
+        border: 1px solid rgb(66, 66, 66);
+    }
+
+    .spann span{
+        color: #676464;
+        font-size: 14px;
+        padding-left: 12px;
+        align-items: center;
+    }
 }
-.aside-sec li{
-    list-style: none;
-    padding: 1rem;
+
+.contant{
+    width: calc(100% - 250px);
+    margin-top: 50px;
+
 }
-.section .aside-sec .line {
-    background-color: #333;
-    color: #333;
-}
+
+
 .aside-sec li:hover{
     background-color: #333;
-    border-radius: 20px;
+    border-radius: 10px;
     cursor: pointer;
-}
-.section{
-    display: flex;
 }
 .nav-bar{
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    /* gap: 50px; */
-}
-.nav-bar li{
-    display: flex;
-    align-items: center;
-    list-style: none;
+    width: 100%;
+    background-color: #0f0f0f;
     padding: 20px;
-    height: 20px;
-    /* padding: 1rem; */
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    height: 3rem;
+    position: fixed;
+    margin-top: -15px;
+
+    li{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding:15px;
+        height: 1px;
+        background-color: #333;
+        
+        border-radius: 10px;
+        /* padding: 1rem; */
+        
+    }
+
+    .next-arrow{
+        width: 100%;
+        height: 2rem;
+        display: flex;
+        align-items: center;
+
+        img{
+            width: 15px;
+        }
+        
+    }
+    .next-arrow:hover{
+            background-color: #333;
+            border-radius: 50px;
+    }
+    
+    
 }
+
 .nav-bar li:hover{
-    background-color: #333;
-    border-radius: 10px;
+    background-color: #4a4949;
     cursor: pointer;
 }
-.content{
+
+.boxes{
+    /* width: 100%; */
+    margin:50px 0 0 20px;
+    /* flex-grow: 1; */
     display: flex;
-    flex-direction: column;
-}
-.box{
-    width: 100%;
-    height: 100%;
-    margin-top: 20px;
-    display: flex;
-    gap: 1rem;
-    
+    gap: 2rem;
     flex-wrap: wrap;
-}
-.box1{
-    display: flex;
-    flex-direction: column;
-    width: 32%;
-    height: 50%;
-    border-radius: 10px;
+    .box{
+        width: 30%;
+        height: 20rem;
+        overflow: hidden;
+        border-radius: 10px;
+
+        img{
+            width:100%;
+            height: 70%;
+        }
+
+        iframe{
+            width:100%;
+            height: 70%;
+        }
+
+        .image-items{
+            margin-top: 10px;
+            display: flex;
+            gap: 1rem;
+
+            img{
+                width: 40px;
+                height: 40px;
+                border-radius: 50px;
+            }
+            .image-para .button{
+                font-size: 1rem;
+                display: grid;
+                margin-top: 15px;
+                gap: 1rem;
+                grid-template-columns: repeat(2,1fr);
+                height: 2rem;
+                border-radius: 30px;
+
+                button{
+                    border-radius: 30px;
+                    color: blue;
+                    
+                    border: 1px solid #333;
+                    background-color: transparent;
+                }
+            }
+            .image-para p{
+                font-size: 0.9rem;
+            }
+            .image-para .para1{
+                font-size: 0.9rem;
+                color: #747070;
+                margin-top: 10px;
+            }
+            .image-para .para2{
+                font-size: 0.9rem;
+                color: #747070;
+            }
+
+            .three{
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+    .box:hover{
+        cursor: pointer;
+    }
+
     
 }
-.box1:hover{
-    cursor: pointer;
-}
-.video{
-    width: 100%;
-    height: 100%;
-}
-.video video{
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-}
-/* .box box1:hover{
-    cursor: pointer;
-    background-color: #333;
-} */
-.boton{
+.shorts-sec{
+    margin-top: 30px;
+    margin-left: 20px;
     display: flex;
     justify-content: space-between;
-    margin-top: 1px;
+
+    .logo-name{
+        display: flex;
+        justify-content: flex-start;
+
+        img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    img{
+        width: 30px;
+        height: 30px;
+        margin-right: 30px;
+    }
+    img:hover{
+        background-color: #333;
+        border-radius: 30px;
+        cursor: pointer;
+    }
 }
-.boton .channel-logo img{
-    width: 50px;
-    height: 50px;
+
+.shorts-videos{
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 10px;
+    display: flex;
+    gap: 1rem;
+
+    .short-box{
+        width: 100%;
+        height: 8%;     
+        width: 18%;
+        height: 27rem;
+
+        img{
+            width:100%;
+            height: 82%;
+            border-radius: 10px;
+        }
+
+        .short-image-para{
+            display: flex;
+            justify-content: space-between;
+
+            img{
+                width: 20px;
+                height: 20px;
+            }
+            .paara-short{
+                font-size: 15px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .view{
+                    color: #9e9898;
+                }
+            }
+        }
+    }
 }
-.boton .info p{
-    color: #908c8c;
+.shorts-videos .short-box:hover{
+    cursor: pointer;
+}
+
+.see-more-line{
+    margin-left: 20px;
+    margin-right: 55px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border: 1px solid #333;
+    position: relative;
+    display: grid;
+    place-items: center;
+
+    .see-more{
+        position: absolute;
+        top: -15px;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        height: 2rem;
+        margin: 0 auto;
+        border: 2px solid #7a6e6e;
+        border-radius: 30px;
+        background-color: #0f0f0f;
+    }
+    .see-more:hover{
+        background-color: #333;
+        cursor: pointer;
+    }
+}
+
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(transparent,#84ebe8);
+    border-radius: 6px;
 }
