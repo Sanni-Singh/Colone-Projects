@@ -248,9 +248,19 @@ body{
     display: flex;
     align-items: center;
     gap: 13px;
-    height: 3rem;
+    height: 3.5rem;
     position: fixed;
     margin-top: -15px;
+    overflow: hidden;
+    overflow-x: scroll;
+
+    ::-webkit-scrollbar{
+        width: 1px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background:linear-gradient(transparent,#84ebe8);
+        border-radius: 1px;
+    }
 
     .nav-first{
         background-color: #fff;
